@@ -12,7 +12,8 @@ def extended_euclidean_algorithm(a, b):
         t1, t2 = t2, t1 - q * t2
     return a, s1, t1  # GCD, x (s1), y (t1)
 
-a, b = 56, 28
+a= int(input("Enter first number: "))
+b= int(input("Enter second number: "))
 gcd = euclidean_algorithm(a, b)
 gcd_ext, x, y = extended_euclidean_algorithm(a, b)
 
