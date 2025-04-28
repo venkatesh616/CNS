@@ -7,7 +7,7 @@ if encrypted_data.ok:
     print("\n🔐 Encrypted Message:")
     print(str(encrypted_data))
 else:
-    print("❌ Encryption failed:", encrypted_data.status)
+    print("Encryption failed:", encrypted_data.status)
     exit()
 encrypted_message = str(encrypted_data)
 decrypted_data = gpg.decrypt(encrypted_message,passphrase='harsh9')
@@ -15,4 +15,4 @@ if decrypted_data.ok:
     print("\n🔓 Decrypted Message:")
     print(str(decrypted_data))
 else:
-    print("❌ Decryption failed:", decrypted_data.status)
+    print("Decryption failed:", decrypted_data.status)
